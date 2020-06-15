@@ -101,13 +101,13 @@ def transactions():
 
 
 
-PORT = 5001
+PORT = 5000
 
 if os.environ.get('PEER') == 'True':
     PORT = random.randint(5001, 6000)
 
     # synchronize blockchain at startup for PEERS
-    response = requests.get('http://localhost:5001/api/blockchain')
+    response = requests.get('http://localhost:5000/api/blockchain')
     blockchain = json_to_blockchain(response.json())
 
     try:
