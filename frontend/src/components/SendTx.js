@@ -93,6 +93,7 @@ const SendTx = () => {
             </FormGroup>
             <div>
                 <Button
+                    disabled={!recipient || amount < 1}
                     variant="outline-light"
                     onClick={submitTx}
                 >Submit  <FontAwesomeIcon icon={faPaperPlane} /></Button>

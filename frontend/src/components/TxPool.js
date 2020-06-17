@@ -78,6 +78,7 @@ const TxPool = () => {
             <TxList />
             <hr />
             <Button
+                disabled={!tx.length>0}
                 variant="outline-light"
                 onClick={mine}
             >
