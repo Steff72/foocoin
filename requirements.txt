@@ -1,4 +1,4 @@
-Flask==1.1.2
+Flask==2.3.2
 pubnub==4.5.1
 cryptography==3.3.2
 Flask-Cors==3.0.9
